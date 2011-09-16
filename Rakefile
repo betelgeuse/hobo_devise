@@ -9,10 +9,10 @@ begin
     gem.description = ""
     gem.email = "jbartosik@gmail.com"
     gem.homepage = "http://github.com/ahenobarbi/hobo_devise"
-    gem.authors = ["Joachim Filip Ignacy Bartosik"]
-    gem.add_dependency "hobo", ">= 1.3.0.pre28"
-    gem.add_dependency "devise", ">= 1.1.7"
-    gem.add_dependency "devise_oauth2_facebook"
+    gem.authors = ["Joachim Filip Ignacy Bartosik", "Petteri Räty"]
+    gem.add_dependency "hobo", ">= 1.3.0.RC1"
+    gem.add_dependency "devise", ">= 1.2"
+    gem.add_dependency "oa-oauth", ">= 0.2.0"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

@@ -35,6 +35,8 @@ with
 
 6) Add routes in config/routes.rb
 
-    match 'user_fb_auth', :controller => 'your_model_name', :action => 'auth', :as => "user_fb_auth"
-    match 'user_fb_callback', :controller => 'your_model_name', :action => 'callback', :as => "user_fb_callback"
+    devise_for :users, :controllers => { :omniauth_callbacks => 'users' }
 
+7) Write a facebook method for your controller
+
+    https://github.com/plataformatec/devise/wiki/OmniAuth%3A-Overview

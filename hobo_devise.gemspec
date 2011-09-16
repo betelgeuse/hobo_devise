@@ -45,16 +45,16 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<hobo>, ["= 1.3.0.RC"])
+      s.add_runtime_dependency(%q<hobo>, [">= 1.3.0.RC1"])
       s.add_runtime_dependency(%q<devise>, [">= 1.1.7"])
       s.add_runtime_dependency(%q<devise_oauth2_facebook>, [">= 0"])
     else
-      s.add_dependency(%q<hobo>, ["= 1.3.0.RC"])
+      s.add_dependency(%q<hobo>, [">= 1.3.0.RC1"])
       s.add_dependency(%q<devise>, [">= 1.1.7"])
       s.add_dependency(%q<devise_oauth2_facebook>, [">= 0"])
     end
   else
-    s.add_dependency(%q<hobo>, ["= 1.3.0.RC"])
+    s.add_dependency(%q<hobo>, [">= 1.3.0.RC1"])
     s.add_dependency(%q<devise>, [">= 1.1.7"])
     s.add_dependency(%q<devise_oauth2_facebook>, [">= 0"])
   end
